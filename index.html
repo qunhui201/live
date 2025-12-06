@@ -1,88 +1,72 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="直播图标库与工具项目">
-    <meta name="author" content="qunhui201">
-    <title>直播图标库</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            padding: 50px;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-        .card-header {
-            background-color: #007bff;
-            color: white;
-        }
-        .card-footer {
-            background-color: #f1f1f1;
-        }
-        .text-center {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+<p align="center"><img alt="live.fanmingming.com" src="https://live.beo.qzz.io//logo.png"></p>
+<h1 align="center"> ✯ 一个可直连访问的电视/广播图标库与相关工具项目 ✯ </h1>
+<h3 align="center">🔕 永久免费 直连访问 完整开源 不断完善的台标 支持IPv4/IPv6双栈访问 🔕</h3>
 
-<div class="container">
-    <div class="text-center mb-5">
-        <h1>直播图标库与相关工具项目</h1>
-        <p>一个可直连访问的电视/广播图标库与相关工具项目</p>
-    </div>
+<p align="center">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/fanmingming/live?style=flat-square">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/fanmingming/live?style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/fanmingming/live?style=flat-square">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/fanmingming/live?style=flat-square">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/fanmingming/live?style=flat-square">
+<img alt="GitHub" src="https://img.shields.io/github/license/fanmingming/live?style=flat-square">
+</p>
 
-    <div class="card">
-        <div class="card-header">
-            <h2>📺 电视图标</h2>
-        </div>
-        <div class="card-body">
-            <p>您可以使用以下链接访问各类电视台的图标。</p>
-            <ul>
-                <li><a href="https://live.fanmingming.cn/tv/CCTV1.png" target="_blank">CCTV-1</a></li>
-                <li><a href="https://live.fanmingming.cn/tv/CCTV2.png" target="_blank">CCTV-2</a></li>
-                <!-- 添加更多链接 -->
-            </ul>
-        </div>
-        <div class="card-footer">
-            <p>最后更新: 2025.04.01</p>
-        </div>
-    </div>
+---
 
-    <div class="card">
-        <div class="card-header">
-            <h2>📻 广播图标</h2>
-        </div>
-        <div class="card-body">
-            <p>您可以使用以下链接访问各类广播电台的图标。</p>
-            <ul>
-                <li><a href="https://live.fanmingming.cn/radio/CNR.png" target="_blank">CNR</a></li>
-                <li><a href="https://live.fanmingming.cn/radio/Beijing.png" target="_blank">北京广播</a></li>
-                <!-- 添加更多链接 -->
-            </ul>
-        </div>
-        <div class="card-footer">
-            <p>最后更新: 2024.8.29</p>
-        </div>
-    </div>
+## 🤹‍♂️使用方法:
 
-    <div class="text-center mt-5">
-        <h4>🔗 相关工具</h4>
-        <p><a href="https://live.fanmingming.cn/m3u8" target="_blank">M3U8 在线下载</a></p>
-        <p><a href="https://live.fanmingming.cn/txt2m3u" target="_blank">TXT 转 M3U 格式</a></p>
-        <p><a href="https://live.fanmingming.cn/e.xml" target="_blank">EPG 接口</a></p>
-    </div>
-</div>
+### 🌇电视/广播图标库：
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+| 类 别  | 调用路径                                       | 最后更新   |
+|-------|------------------------------------------------|------------|
+| 📺电视  | [https://live.beo.qzz.io//tv/{name}.png](https://github.com/fanmingming/live/tree/main/tv) | 2025.04.01    |
+| 📻广播  | [https://live.beo.qzz.io//radio/{name}.png](https://github.com/fanmingming/live/tree/main/radio) | 2024.8.29   |
 
-</body>
-</html>
+### ⛓️创建您的m3u订阅链接：
+ - 下载 `demo.m3u` 空白示例文件并使用文本编辑软件打开。
+   - [https://live.beo.qzz.io//tv/m3u/demo.m3u](https://live.beo.qzz.io//tv/m3u/demo.m3u)
+
+ - 参考下方示例代码将`可用的CCTV1节目源`替换为您当地可用的直播源链接，依此类推逐个替换。
+
+
+
+
+ - 将编辑完成的m3u文件上传到您的Github仓库。
+ - 为您的Github仓库开启Pages。
+ - 通过播放器订阅您的m3u链接。
+
+> 关于Github Pages：[https://docs.github.com/en/enterprise-cloud@latest/pages/quickstart](https://docs.github.com/en/enterprise-cloud@latest/pages/quickstart)
+
+## 🛠️工具
+- 📆**EPG接口地址**：
+  -  [https://live.beo.qzz.io//e.xml](https://live.beo.qzz.io//e.xml)
+- 🏞️**Bing每日图片**：
+  -  [https://fanmingming.com/bing](https://fanmingming.com/bing)
+- 🎞️**m3u8在线下载**：
+  -  [https://live.beo.qzz.io//m3u8](https://live.beo.qzz.io//m3u8)
+- 🆕**TXT转M3U格式**：
+  - [https://live.beo.qzz.io//txt2m3u](https://live.beo.qzz.io//txt2m3u)
+- 📄**在线M3U转TXT**：
+  - Demo🔗 [https://fanmingming.com/txt?url=https://live.beo.qzz.io//tv/m3u/ipv6.m3u](https://fanmingming.com/txt?url=https://live.beo.qzz.io//tv/m3u/ipv6.m3u)
+- 🌐**M3U8 Web Player**:
+  - Demo🔗 [https://live.beo.qzz.io//player/?vurl=https://0472.org/hls/cgtn.m3u8](https://live.beo.qzz.io//player/?vurl=https://0472.org/hls/cgtn.m3u8)
+
+## 📖说明
+- 项目EPG接口为112114.xyz站点分发，本项目无法确保其准确性。
+- 通过M3U8 Web Player测试直播源需使用https协议的直播源链接。
+- 在线M3U转TXT工具构建在Vercel，不会记录您的访问日志请放心使用。
+- TXT转M3U工具为前端网页转换，无需上传文件，粘贴即转换，安全不偷源。
+- 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
+- 项目`/tv/m3u/`和`/radio/m3u/`目录下的内容收集于互联网，仅供测试研究使用，本项目无法保证其有效性。
+- 主域名【`live.fanmingming.com`】的WEB访问通过Github Pages自动构建，由CloudFlare提供CDN和安全防护。
+- 镜像域名【`live.fanmingming.cn`】提供完整的资源WEB访问，通过Github Actions自动构建在CloudFlare Pages。
+- 项目所有文件均托管在[GitHub](https://github.com/fanmingming/live)且自动构建，由项目发起人公益维护，欢迎Star本项目或点击[Issues](https://github.com/fanmingming/live/issues/new/choose)反馈您的问题。
+- 您可以Frok本项目到您的Github账户，将缺失的频道Logo上传到`tv`或`radio`目录下并发起拉取请求，收到请求后我们会对您提交的内容进行验证，审核通过后会自动为您署名并发布。
+
+## 📱联系
+- Telegram: [@AirfoneBot](https://t.me/AirfoneBot)
+  - 如遇资源访问问题请通过Telegram反馈。
+
+## 📔更新
+- 2025.04.01
+  - 新增北京卫视4K台标。
