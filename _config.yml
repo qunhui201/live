@@ -1,3 +1,7 @@
-remote_theme: pages-themes/cayman@v0.2.0
+title: Your Site Title
+description: A description of your site
+baseurl: "/live"  # 如果你的站点是放在 GitHub Pages 的 `/live` 子路径下
+url: "https://qunhui201.github.io"  # GitHub 的域名
+remote_theme: pages-themes/cayman@v0.2.0  # 远程主题
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme  # 启用远程主题插件
