@@ -1,14 +1,14 @@
-<p align="center"><img alt="live.fanmingming.com" src="https://qunhui201.github.io/live/logo.png"></p>
+<p align="center"><img alt="https://live.beo.qzz.io" src="https://live.beo.qzz.io/logo.png"></p>
 <h1 align="center"> ✯ 一个可直连访问的电视/广播图标库与相关工具项目 ✯ </h1>
 <h3 align="center">🔕 永久免费 直连访问 完整开源 不断完善的台标 支持IPv4/IPv6双栈访问 🔕</h3>
 
 <p align="center">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/fanmingming/live?style=flat-square">
-<img alt="GitHub forks" src="https://img.shields.io/github/forks/fanmingming/live?style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/fanmingming/live?style=flat-square">
-<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/fanmingming/live?style=flat-square">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/fanmingming/live?style=flat-square">
-<img alt="GitHub" src="https://img.shields.io/github/license/fanmingming/live?style=flat-square">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/qunhui201/live?style=flat-square">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/qunhui201/live?style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/qunhui201/live?style=flat-square">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/qunhui201/live?style=flat-square">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/qunhui201/live?style=flat-square">
+<img alt="GitHub" src="https://img.shields.io/github/license/qunhui201/live?style=flat-square">
 </p>
 
 ---
@@ -19,19 +19,19 @@
 
 | 类 别  | 调用路径                                       | 最后更新   |
 |-------|------------------------------------------------|------------|
-| 📺电视  | [https://qunhui201.github.io/live/tv/{name}.png](https://github.com/fanmingming/live/tree/main/tv) | 2025.04.01    |
-| 📻广播  | [https://qunhui201.github.io/live/radio/{name}.png](https://github.com/fanmingming/live/tree/main/radio) | 2024.8.29   |
+| 📺电视  | [https://live.beo.qzz.io/tv/{name}.png](https://github.com/qunhui201/live/tree/main/tv) | 2025.04.01    |
+| 📻广播  | [https://live.beo.qzz.io/radio/{name}.png](https://github.com/qunhui201/live/tree/main/radio) | 2024.8.29   |
 
 ### ⛓️创建您的m3u订阅链接：
  - 下载 `demo.m3u` 空白示例文件并使用文本编辑软件打开。
-   - [https://qunhui201.github.io/live/tv/m3u/demo.m3u](https://qunhui201.github.io/live/tv/m3u/demo.m3u)
+   - [https://live.beo.qzz.io/tv/m3u/demo.m3u](https://live.beo.qzz.io/tv/m3u/demo.m3u)
 
  - 参考下方示例代码将`可用的CCTV1节目源`替换为您当地可用的直播源链接，依此类推逐个替换。
 
 
 ```
-#EXTM3U x-tvg-url="https://live.fanmingming.cn/e.xml"
-#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="央视",CCTV-1 综合
+#EXTM3U x-tvg-url="https://live.beo.qzz.io/e.xml"
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.beo.qzz.io/tv/CCTV1.png" group-title="央视",CCTV-1 综合
 可用的CCTV1节目源
 此处省略...
 ```
@@ -45,17 +45,17 @@
 
 ## 🛠️工具
 - 📆**EPG接口地址**：
-  -  [https://qunhui201.github.io/live/e.xml](https://qunhui201.github.io/live/e.xml)
+  -  [https://live.beo.qzz.io/e.xml](https://live.beo.qzz.io/e.xml)
 - 🏞️**Bing每日图片**：
-  -  [https://fanmingming.com/bing](https://fanmingming.com/bing)
+  -  [https://live.beo.qzz.io/bing](https://live.beo.qzz.io/bing)
 - 🎞️**m3u8在线下载**：
-  -  [https://qunhui201.github.io/live/m3u8](https://qunhui201.github.io/live/m3u8)
+  -  [https://live.beo.qzz.io/m3u8](https://live.beo.qzz.io/m3u8)
 - 🆕**TXT转M3U格式**：
-  - [https://qunhui201.github.io/live/txt2m3u](https://qunhui201.github.io/live/txt2m3u)
+  - [https://live.beo.qzz.io/txt2m3u](https://live.beo.qzz.io/txt2m3u)
 - 📄**在线M3U转TXT**：
-  - Demo🔗 [https://fanmingming.com/txt?url=https://qunhui201.github.io/live/tv/m3u/ipv6.m3u](https://fanmingming.com/txt?url=https://qunhui201.github.io/live/tv/m3u/ipv6.m3u)
+  - Demo🔗 [https://live.beo.qzz.io/txt?url=https://live.beo.qzz.io/tv/m3u/ipv6.m3u](https://live.beo.qzz.io/txt?url=https://live.beo.qzz.io/tv/m3u/ipv6.m3u)
 - 🌐**M3U8 Web Player**:
-  - Demo🔗 [https://qunhui201.github.io/live/player/?vurl=https://0472.org/hls/cgtn.m3u8](https://qunhui201.github.io/live/player/?vurl=https://0472.org/hls/cgtn.m3u8)
+  - Demo🔗 [https://live.beo.qzz.io/player/?vurl=https://0472.org/hls/cgtn.m3u8](https://live.beo.qzz.io/player/?vurl=https://0472.org/hls/cgtn.m3u8)
 
 ## 📖说明
 - 项目EPG接口为112114.xyz站点分发，本项目无法确保其准确性。
@@ -64,9 +64,9 @@
 - TXT转M3U工具为前端网页转换，无需上传文件，粘贴即转换，安全不偷源。
 - 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
 - 项目`/tv/m3u/`和`/radio/m3u/`目录下的内容收集于互联网，仅供测试研究使用，本项目无法保证其有效性。
-- 主域名【`live.fanmingming.com`】的WEB访问通过Github Pages自动构建，由CloudFlare提供CDN和安全防护。
-- 镜像域名【`live.fanmingming.cn`】提供完整的资源WEB访问，通过Github Actions自动构建在CloudFlare Pages。
-- 项目所有文件均托管在[GitHub](https://github.com/fanmingming/live)且自动构建，由项目发起人公益维护，欢迎Star本项目或点击[Issues](https://github.com/fanmingming/live/issues/new/choose)反馈您的问题。
+- 主域名【`live.beo.qzz.io`】的WEB访问通过Github Pages自动构建，由CloudFlare提供CDN和安全防护。
+- 镜像域名【`live.beo.qzz.io`】提供完整的资源WEB访问，通过Github Actions自动构建在CloudFlare Pages。
+- 项目所有文件均托管在[GitHub](https://github.com/qunhui201/live)且自动构建，由项目发起人公益维护，欢迎Star本项目或点击[Issues](https://github.com/fanmingming/live/issues/new/choose)反馈您的问题。
 - 您可以Frok本项目到您的Github账户，将缺失的频道Logo上传到`tv`或`radio`目录下并发起拉取请求，收到请求后我们会对您提交的内容进行验证，审核通过后会自动为您署名并发布。
 
 ## 📱联系
