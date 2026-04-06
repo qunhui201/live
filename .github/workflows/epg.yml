@@ -21,9 +21,9 @@ jobs:
         # 源4: kodi.wiki 或其他备份
         
         SOURCES=(
-          "https://epg.112114.xyz/pp.xml"
-          "http://epg.51zmt.top:8000/e.xml"
-          "https://epg.pw/xmltv/feed/cctv.xml"
+            "http://epg.51zmt.top:8000/e.xml"    # 把最稳的放第一位
+            "https://epg.pw/xmltv/feed/cctv.xml"
+            "https://epg.112114.xyz/pp.xml"     # 挂掉的放最后当垫底
         )
 
         SUCCESS=false
