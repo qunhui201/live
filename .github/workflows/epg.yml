@@ -1,19 +1,69 @@
-name: EPG Update
+name: EPG Multi-Source Update
 on:
+  push:
+  schedule:
+    # 每 2 小时运行一次
+    - cron: '15 0,2,4,6,8,10,12,14,16,18,20,22 * * *'
+  workflow_dispatch: # 允许手动触发测试
 
-  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Update EPG Files
+
+    - name: Update EPG Files (Multi-Source Fallback)
       run: |
-        rm -f e.xml && wget  https://raw.githubusercontent.com/fanmingming/live/main/e.xml. -O e.xml
+        # 定义 EPG 源列表（按优先级排序）
+        # 源1: 112114 (你原本的源)
+        # 源2: 51zmt (老牌稳定源)
+        # 源3: epg.pw (国际通用源)
+        # 源4: kodi.wiki 或其他备份
+        
+        SOURCES=(
+          "https://epg.112114.xyz/pp.xml"
+          "http://epg.51zmt.top:8000/e.xml"
+          "https://epg.pw/xmltv/feed/cctv.xml"
+        )
+
+        SUCCESS=false
+
+        for url in "${SOURCES[@]}"; do
+          echo "📡 尝试从 $url 下载..."
+          # -t 2 重试2次, -T 15 超时15秒, -O 输出文件名
+          if wget -t 2 -T 15 "$url" -O e_temp.xml; then
+            # 检查文件大小是否超过 50KB (防止下到 522 报错网页)
+            FILE_SIZE=$(stat -c%s "e_temp.xml")
+            if [ "$FILE_SIZE" -gt 51200 ]; then
+              mv e_temp.xml e.xml
+              echo "✅ 成功从 $url 获取 EPG (大小: $FILE_SIZE bytes)"
+              SUCCESS=true
+              break
+            else
+              echo "⚠️ 文件太小 ($FILE_SIZE bytes)，疑似错误页面，跳过。"
+            fi
+          else
+            echo "❌ 连接 $url 失败。"
+          fi
+        done
+
+        if [ "$SUCCESS" = false ]; then
+          echo "🚫 所有 EPG 源均失效，保持旧版文件。"
+          exit 0 # 正常退出，不让 GitHub 发报错邮件
+        fi
+
+        # 配置 Git 并提交
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git add e.xml
-        git commit -m "EPG Update."
+        
+        # 检查是否有文件变化，避免空提交报错
+        if git status | grep -q "e.xml"; then
+          git add e.xml
+          git commit -m "EPG Update: $(date '+%Y-%m-%d %H:%M')"
+        else
+          echo "📝 内容无变化，无需提交。"
+        fi
+
     - name: Push changes
       run: git push origin main
       env:
